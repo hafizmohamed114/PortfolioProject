@@ -1,0 +1,358 @@
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                GENERAL RULES
+/////////////////////////////////////////////////////////////////////////////////////////*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                END GENERAL RULES
+/////////////////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                START - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+nav {
+  background: -webkit-gradient(linear, left top, right top, from(#4df4bc), to(#5543ca));
+  background: linear-gradient(to right, #4df4bc 0%, #5543ca 100%);
+}
+
+nav a {
+  font-size: .9em;
+  color: whitesmoke;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav .nav-link:hover {
+  color: black;
+  background: white;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                END - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                START - THE MAIN SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+.main {
+  background: url(/img/background.PNG);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.main h6 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  letter-spacing: 4px;
+}
+
+.main h1 {
+  font-size: 5.5rem;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+@media only screen and (max-width: 1275px) {
+  .main {
+    background: -webkit-gradient(linear, left bottom, left top, from(#5543ca), to(#4df4bc));
+    background: linear-gradient(to top, #5543ca 0%, #4df4bc 100%);
+  }
+  .main h6 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    letter-spacing: 4px;
+  }
+  .main h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding: 0.1em 0em;
+  }
+  .main .small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                END - THE MAIN SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                START - THE ABOUT  SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+.about {
+  background: -webkit-gradient(linear, left top, right top, from(#7d94e7), to(#45c7b3));
+  background: linear-gradient(to right, #7d94e7 0%, #45c7b3 100%);
+  height: 95vh;
+}
+
+.about img {
+  opacity: 0.6;
+  width: 100%;
+  border-radius: 0.4em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  padding-top: 10rem;
+  padding-right: 1rem;
+}
+
+.about h3 {
+  font-size: .9rem;
+  font-weight: 900;
+}
+
+.about .progress-title {
+  padding-top: 1.7rem;
+}
+
+.about .btn1 {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#4df4bc), to(#5543ca));
+  background: linear-gradient(to right, #4df4bc 0%, #5543ca 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+.about .btn2 {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#5543ca), to(#4df4bc));
+  background: linear-gradient(to right, #5543ca 0%, #4df4bc 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1275px) {
+  .about img {
+    padding: 0;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about .progress-title {
+    padding-top: .7rem;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                END - THE ABOUT  SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                START - THE SERVICES SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+.section-services {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  font-family: "Poppins", sans-serif;
+  background: whitesmoke;
+  color: black;
+}
+
+.section-services .header-section {
+  margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 140px;
+  height: 1px;
+  background-color: #4df4bc;
+}
+
+.section-services .header-section .title:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 45px;
+  height: 3px;
+  background-color: #5543ca;
+}
+
+.section-services .header-section .title span {
+  background: -webkit-gradient(linear, left top, right top, from(#4df4bc), to(#5543ca));
+  background: linear-gradient(to right, #4df4bc 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-services .header-section .description {
+  color: #6f6f71;
+}
+
+.section-services .single-service {
+  margin-top: 40px;
+  background-color: #89ccd4;
+  -webkit-box-shadow: 5px 10px 18px #5543ca;
+          box-shadow: 5px 10px 18px #5543ca;
+  border-radius: 5px;
+}
+
+.section-services .single-service .part-1 {
+  padding: 40px 40px 25px;
+  border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 i {
+  margin-bottom: 25px;
+  font-size: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#5543ca), to(#239771));
+  background: linear-gradient(to right, #5543ca 0%, #239771 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-services .single-service .part-1 .title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 {
+  padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+  margin-bottom: 22px;
+  color: #6f6f71;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                END - THE SERVICES SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                                START THE Contact SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+.contact {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  -webkit-box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.contact .title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: #5543ca;
+  background: -webkit-gradient(linear, left top, right top, from(#4df4bc), to(#5543ca));
+  background: linear-gradient(to right, #4df4bc 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact .contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact .contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #5543ca;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.contact .contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact .contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #5543ca;
+  cursor: text;
+  text-transform: capitalize;
+  -webkit-transition: -webkit-transform 0.2 ease-in-out;
+  transition: -webkit-transform 0.2 ease-in-out;
+  transition: transform 0.2 ease-in-out;
+  transition: transform 0.2 ease-in-out, -webkit-transform 0.2 ease-in-out;
+}
+
+.contact .contact-form .submit-btn {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#4df4bc), to(#5543ca));
+  background: linear-gradient(to right, #4df4bc 0%, #5543ca 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+.contact .contact-form .input-text:focus + .label,
+.contact .contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+
+@media only screen and (max-width: 1275px) {
+  .contact .contact {
+    height: 90vh;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////
+                              END - THE Contact SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////*/
+/*# sourceMappingURL=styles.css.map */
